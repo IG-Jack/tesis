@@ -1,0 +1,223 @@
+<ion-header [translucent]="true">
+  <ion-segment [scrollable]="true" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="home" >
+      <ion-icon name="home"></ion-icon>Inicio
+    </ion-segment-button>
+    <ion-segment-button value="historia">
+      <ion-icon name="hardware-chip-outline"></ion-icon>Paneles Solares
+    </ion-segment-button>
+    <ion-segment-button value="tres">
+      <ion-icon name="pin"></ion-icon>Generador Solar
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+  <ion-row style="height:auto;margin-top: 20px;background-color: orange;">
+    <ion-col size-lg="6" size="12" style="height: 100%;">
+      <div style="width: 100%;height: 100%;">
+        <p style="text-align: justify;font-size: 48px;font-family: 'Times New Roman', Times, serif;">Transformando la luz solar en soluciones para tu confort
+
+
+
+        </p>
+        <ion-segment [scrollable]="true" (ionChange)="segmentChanged1($event)" value="tab1">
+          <ion-segment-button value="tab1">
+
+             <ion-label>Quienes somos</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="tab2">
+              <ion-label>Mision</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="tab3">
+              <ion-label>Vision</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="tab4">
+              <ion-label>Valores</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        
+          <div *ngIf="activeSegment === 'tab1'">
+           <p style="text-align:lef;font-family: 'Times New Roman', Times, serif;font-size: 21px;">Empresa de energía solar enfocada en desarrollar y fortalecer la transición hacia un modelo de generación eléctrica descentralizado, resiliente y sostenible.
+
+           </p>
+          </div>
+          <div *ngIf="activeSegment === 'tab2'">
+           <p style="text-align:lef;font-family: 'Times New Roman', Times, serif;font-size: 21px;"> Formar parte activa de la transición energética sostenible del Ecuador, ofreciendo soluciones de ahorro de energía y sostenibilidad mediante la integración de un sistema fotovoltaico.  Ajustados a las necesidades de cada cliente y proyecto.</p>
+          </div>
+          <div *ngIf="activeSegment === 'tab3'">
+         <p style="text-align:lef;font-family: 'Times New Roman', Times, serif;font-size: 21px;">Trabajar con el objetivo de convertirnos en empresa líder en el sector de las energías renovables y eficiencia energética en Latino América.
+
+         </p>
+          </div>
+          <div *ngIf="activeSegment === 'tab4'">
+          <p style="text-align:lef;font-family: 'Times New Roman', Times, serif;font-size: 21px;">Nos sustentamos en cuatro pilares básicos basados en un auténtico compromiso de responsabilidad:</p>
+       
+<ion-icon name="analytics-outline" style="font-size: 30px;"></ion-icon>Pasion
+<hr/>
+<ion-icon name="pulse-outline" style="font-size: 30px;"></ion-icon>Transperencia
+
+<hr/>
+<ion-icon name="school-outline" style=" font-size: 30px;"></ion-icon>Resilencia
+<hr/>
+<ion-icon name="hardware-chip-outline" style="font-size: 30px;"></ion-icon>Inovacion
+</div>      
+</div>
+        
+      
+      
+    </ion-col>
+    <ion-col size-lg="6" size="12" style="display: flex; flex-direction: column; justify-content: center;">
+      <div style="width: 100%; height: 70%; background-color: blue; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+        <ion-img src="https://millerspanish.com/assets/img/uploads/2019/10/solar.jpg" style="width: 100%; height: auto; max-height: 100%;"></ion-img>
+      </div>
+    </ion-col>
+    
+
+  </ion-row>
+</ion-grid>
+
+
+<ion-grid style="margin-bottom: 40px;background-color: rgb(243, 12, 62);">
+  <p style="font-size: 24px;margin-top: 20px;margin-left: 40px;color: black;background-color: rgb(243, 12, 62)">Nuestos  Objetivos</p>
+
+
+  <ion-row style="width: 95%; height: 400px; margin: 20px 20px 20px;background-color: rgb(236, 157, 8);">
+    <ion-col  size="4" >
+<ion-card>
+  <ion-card-title style="display: flex; flex-direction: column; align-items: center; margin-top: 7px;">
+
+    <ion-icon name="storefront-outline" style="color: orange; font-size: 2em;"></ion-icon>
+    <h2 style="text-align: center;">Maximizar el potencial de ahorro de su factura eléctrica</h2>
+  
+  </ion-card-title>
+  
+<ion-card-content>
+  <p style="text-align: left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">El ahorro económico en facturación es un gran vector para apostar por energía solar. Es transformar el gasto constante de todos los meses en un activo, con un carácter circular y compatible con el ambiente, generando un flujo positivo desde el primer día de operación.</p>
+</ion-card-content>
+</ion-card>
+
+    </ion-col>
+    <ion-col  size="4" >
+      <ion-card>
+        <ion-card-title  style="display: flex; flex-direction: column; align-items: center; margin-top: 7px;">
+        
+          <ion-icon name="construct-outline" style="color:orange;font-size: 2em;"></ion-icon>
+          <h2 style="text-align: center;">Diseñar el proyecto utilizando nuestra fórmula ganadora</h2>
+        </ion-card-title>
+         
+        
+        <ion-card-content>
+<p  style="text-align: left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">
+  Tú proyecto de energía solar es el eje central de nuestro diseño. 
+</p>
+<hr/>
+<p  style="text-align: left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">
+  Las grandes relaciones comerciales con los mayores fabricantes a nivel global nos permiten analizar cual fuera la tecnología más viable para adaptar al proyecto. 
+</p>
+
+        </ion-card-content>
+        </ion-card>
+            </ion-col>
+
+
+
+    <ion-col  size="4" >
+<ion-card>
+  <ion-card-title  style="display: flex; flex-direction: column; align-items: center; margin-top: 7px;">
+        
+    <ion-icon name="checkmark-done-outline"  style="color:orange;font-size: 2em;"></ion-icon>
+    <h2 style="text-align: center;">Entregar resultados eliminando cualquier riesgo</h2>
+  </ion-card-title>
+  
+<ion-card-content>
+
+  <p  style="text-align: left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">
+    Gestionamos nuestros proyectos con la de experiencia que tiene Rural Energy y de nuestrod aliados comerciales de tecnología y energía sostenible
+  </p>
+</ion-card-content>
+</ion-card>
+
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<div class="paneles" >
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" >
+  <div style="width: 100%;height: 100%;background-color: rgb(255, 255, 255);">
+   <p style="font-family: 'Times New Roman', Times, serif;font-size: 40px;">¿Qué son los paneles solares? </p>
+  <br/>
+  <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px;">
+    Los paneles solares, también conocidos como módulos fotovoltaicos, son dispositivos tecnológicos diseñados para convertir la luz solar en electricidad. Estos dispositivos están compuestos principalmente por células solares, que son dispositivos semiconductores que generan corriente eléctrica cuando son expuestos a la luz sol
+  </p>
+  <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px;"> La principal ventaja de los paneles solares radica en su capacidad para aprovechar una fuente de energía renovable e inagotable: la luz solar. Al transformar la energía solar en electricidad, los paneles solares contribuyen a la sostenibilidad y reducen la dependencia de fuentes de energía no renovables. Este proceso se realiza de manera limpia y sin emisiones de gases de efecto invernadero, lo que beneficia el medio ambiente y ayuda en la lucha contra el cambio climático.</p>
+  
+  
+  <p style="text-align:left;font-family: 'Times New Roman', Times, serif;font-size: 21px">Asimismo, muchos gobiernos y organizaciones ofrecen incentivos y subvenciones para fomentar la adopción de energía solar, lo que hace que la inversión inicial sea más atractiva</p>
+  </div>
+      </ion-col>
+      <ion-col size="5">
+  <div style="width: 100%;height: 100%;background-color: rgb(226, 125, 43); align-items:center;display: flex;justify-content: center; border-radius: 90px;">
+    <ion-img src="assets/foto.jpg" style="width: 80%; max-width: 600px; height: auto; object-fit: cover; border-radius: 80px;"> </ion-img>
+  </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </div>
+  
+  
+
+<div style="width: 100%;height: auto;background-color:black ;">
+  <ion-grid>
+  
+    <ion-row style="width: 100%;height: 650px; padding: 30px 30px 30px 30px;">
+  
+      <ion-col size="6" style="height: 100%;">
+  <h2 style="font-family: 'Times New Roman', Times, serif;font-size: 40px;color: rgb(14, 230, 143);">Tipos de Paneles</h2>
+  <h2 style="font-family: 'Times New Roman', Times, serif;font-size: 40px;color: rgb(14, 230, 143);"> Solares </h2>
+  <hr/>
+  
+  
+  
+  <p style="margin-left: 7px;font-family: 'Times New Roman', Times, serif;font-size: 21px;">Los paneles Solares puenden ser de 2 Tipos</p>
+  <hr/>
+  <hr/>
+  <p style="margin-left: 12px;color: rgb(14, 230, 14);font-family: 'Times New Roman', Times, serif;font-size: 27px;">Paneles solares monocristalinos</p>
+  <p style="margin-left: 12px;font-family: 'Times New Roman', Times, serif;font-size: 21px;color: white;">Están formados por un solo cristal de grandes dimensiones que es cortado en finas láminas. La tecnología monocristalina hace referencia a la manera en la cual están fabricados los paneles solares. Un panel solar se fabrica principalmente con silicio y se compone de varias celdas fotovoltaicas que se conectan eléctricamente entre sí en serie y en paralelo. Tal y como indica el nombre de esta tecnología, los paneles solares monocristalinos están formados por celdas de un solo cristal. </p>
+  <hr/>
+  <p style="margin-left:7px;color: rgb(14, 230, 14);font-family: 'Times New Roman', Times, serif;font-size: 27px;">Paneles solares policristalinos
+  </p>
+  <p style="margin-left: 12px;font-family: 'Times New Roman', Times, serif;font-size: 21px;color: white;">Están constituidos por varios cristales, tienen un color azul no uniforme aunque las últimas técnicas de fabricación ya otorgan de mayor uniformidad al aspecto de la célula.
+  </p>
+  </ion-col>
+  
+      <ion-col size="5" style="height: 100%;background-color: rgb(255, 255, 255);width: 100%;padding: 30px 30px 30px 30px;border-radius: 50px;">
+       
+  
+          <ion-img src="assets/tpaneles.jpg" style="width: 100%;height: 100%;">
+        
+          </ion-img>
+        
+      </ion-col>
+    </ion-row>
+  
+  </ion-grid>
+  
+  </div>
+  
+<div class="header-container">
+  <div class="header" style="background-image: url('https://technocio.com/wp-content/uploads/2022/06/Technocio.jpg');">
+    <div class="overlay"></div>
+    <div class="header-text">
+      <p style="text-align: center;">Soluciones de energía solar
+        en todo Ecuador</p>
+      
+    </div>
+  </div>
+</div>
+
+</ion-content>

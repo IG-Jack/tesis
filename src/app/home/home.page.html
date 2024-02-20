@@ -1,20 +1,174 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+  <ion-segment [scrollable]="true" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="home" >
+      <ion-icon name="home"></ion-icon>Inicio
+    </ion-segment-button>
+    <ion-segment-button value="historia">
+      <ion-icon name="hardware-chip-outline"></ion-icon>Paneles
+    </ion-segment-button>
+    <ion-segment-button value="tres">
+      <ion-icon name="pin"></ion-icon>Generador Solar
+    </ion-segment-button>
+    </ion-segment>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+ 
+  <div class="header-container">
+    <div class="header" style="background-image: url('https://prensaregional.pe/wp-content/uploads/2020/10/Central-Solar-Fotovoltaica-Rubi-se-ubica-en-Moquegua.jpg');">
+      <div class="overlay"></div>
+      <div class="header-text">
+        <p>La energía solar</p>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">De divinidad a objeto de estudio de Albert Einstein, desde los albores de la humanidad la luz solar ha ido de la mano del ser humano.</div>
+            <div class="swiper-slide">Hemos aprovechado su energía para iluminar nuestras vidas, alimentar nuestras ciudades y alimentar nuestras mentes con la esperanza de un futuro más sostenible.</div>
+            <div class="swiper-slide">Explora con nosotros la maravilla de la energía solar y descubre cómo está dando forma a nuestro mundo y nuestro futuro.</div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
   </div>
-</ion-content>
+
+  <section>
+    <div class="st">
+      <h3 class="a">¿Que es la Energia solar?</h3>
+      <div style="margin-top: 20px;">
+      <h1 class="c">La madre de todas las</h1>
+      <h1 class="c">Energias</h1>
+      <h1 class="z">Energias</h1>
+</div>
+      
+  
+    </div>
+   
+  </section>
+  <div class="sty">
+    <div class="sub_sty" id="styContainer">
+<p>La energía solar es la energía madre de la Tierra. Gracias a la radiación solar,</p>
+<p>por ejemplo, las plantas realizan la fotosíntesis de la clorofila y ponen en</p>
+<p>marcha el proceso que permite la supervivencia de los seres vivos que</p>
+<p>habitan el planeta. La radiación solar también es el origen de los vientos, las</p>
+<p>mareas y los combustibles fósiles: el Sol es el motor principal de casi todas</p>
+<p>las formas de energía de nuestro planeta.</p>
+    </div>
+</div>
+
+
+<div class="stys">
+<section class="sub_stys" id="stysContainer"> 
+<p>En la actualidad, casi 150 años después de la fabricación de la primera célula</p>
+<p>fotovoltaica, la energía solar es el tipo de energía renovable que más crece</p>
+<p>proporcionalmente (+24 % al año según el informe IRENA 2019) en</p>
+<p>consonancia con el desarrollo tecnológico, que permite la construcción de</p>
+<p>parques solares cada vez más eficientes. El sol va a seguir </p>
+<p>brillando en lo más alto, también de las energías sostenibles.</p>
+</section>  
+</div>
+<!-- app.component.html -->
+<!-- app.component.html -->
+<div style="height: 600px;">
+<ion-grid>
+
+  <ion-row>
+    <ion-col size="6">
+<h1 style="color: rgb(20, 219, 20);margin-left: 40px;"> Que  es la Enegia fotovoltaica</h1>
+
+<hr>
+
+<hr>
+
+<p style="text-align: left;font-family: 'Times New Roman', Times, serif;font-size: 21px;margin-left: 40px;">La energía fotovoltaica es una forma de generación de energía eléctrica que aprovecha la radiación solar para producir electricidad. Este proceso se lleva a cabo mediante el uso de dispositivos llamados células fotovoltaicas o paneles solares. Estas células están hechas de materiales semiconductores, como el silicio, que tienen la capacidad de convertir la luz solar directamente en electricidad a través del efecto fotovoltaico.
+
+</p>
+<p style="text-align: left;font-family: 'Times New Roman', Times, serif;font-size: 21px;margin-left: 40px;">Cuando la luz solar incide sobre las células fotovoltaicas, los fotones de luz excitan los electrones en el material semiconductor, generando así una corriente eléctrica. Estas corrientes individuales de las células se combinan en módulos solares, y múltiples módulos se pueden instalar juntos para formar un sistema fotovoltaico más grande.
+
+</p>
+<p style="text-align: left;font-family: 'Times New Roman', Times, serif;font-size: 21px;margin-left: 40px;">La energía fotovoltaica es una fuente de energía renovable y sostenible, ya que utiliza la luz del sol, una fuente inagotable, para generar electricidad sin emitir gases de efecto invernadero u otros contaminantes atmosféricos directos durante su operación. Esta forma de generación de energía es ampliamente utilizada en aplicaciones residenciales, comerciales e industriales, así como en proyectos a gran escala para la generación de energía a nivel de red.
+
+
+
+
+</p>
+  </ion-col>
+
+  <ion-col size-lg="6" size="12" style="display: flex; flex-direction: column; justify-content: center;">
+    <div style="width: 100%; height: 100%; background-color: blue; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+      <ion-img src="https://ingeoexpert.com/wp-content/uploads/2019/03/energia-solar-fotovoltaica.jpg" style="width: 100%; height: auto; max-height: 100%;"></ion-img>
+    </div>
+  </ion-col>
+  </ion-row>
+</ion-grid>
+</div>
+<swiper-container
+    #swiper
+    (swiper)="swiperReady()"
+    [loop]="true"
+    [pagination]="true"
+    style="width: 100%; height: auto;background-color: black;"
+  >
+  <swiper-slide>
+    <div class="ion">
+      <div class="dark-bg">
+        <div class="section-1">
+          <h1 style="font-family: 'Times New Roman', Times, serif;">Ventajas de la energia solar</h1>
+        
+        </div>
+        <div class="section-2">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4">
+                <ion-card style="background-color: black;">
+    <ion-card-header>
+      <ion-icon name="bulb-outline" class="foco"></ion-icon>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <h1 style="margin-bottom: 5px;font-family: 'Times New Roman', Times, serif;color: white;">Amplios márgenes de desarrollo</h1>
+    <p style="font-family: 'Times New Roman', Times, serif;color: white;">La eficiencia media de los paneles solares es del 20 %, pero la innovación tecnológica está subiendo el listón año tras año. La heterounión ya está en el 24,63 % y la multiunión ya ha superado el 40 %.<p>
+    </ion-card-content> 
+    </ion-card>
+              </ion-col>
+              <ion-col size="4" >
+                <ion-card style="background-color: black;">
+                  <ion-card-header>
+                    <ion-icon name="golf-outline" class="recurso"></ion-icon>
+                  </ion-card-header>
+                  <ion-card-content>
+                    <h1 style="margin-bottom: 5px;font-family: 'Times New Roman', Times, serif;color: white;">Un recurso escalable</h1>
+    <p style="font-family: 'Times New Roman', Times, serif;color: white;">De los tejados de las casas para uso doméstico a las centrales de energía solar para cubrir las necesidades energéticas de un país, la energía solar puede satisfacer una amplia variedad de necesidades. 
+    
+    </p>                
+                  </ion-card-content> 
+                  </ion-card>
+              </ion-col>
+              <ion-col size="4" >
+                <ion-card style="background-color: black;">
+                  <ion-card-header>
+                    <ion-icon name="leaf-outline" class="logro"></ion-icon>              </ion-card-header>
+                  <ion-card-content>
+                    <h1 style="margin-bottom: 5px;font-family: 'Times New Roman', Times, serif;color: white;">Un recurso escalable</h1>
+                  <p style="font-family: 'Times New Roman', Times, serif;color: white;">Una instalación fotovoltaica no emite ningún ruido durante su funcionamiento. Cero emisiones de CO2 y cero decibelios mientrasse produce nueva energía sostenible. 
+    
+                  </p>              </ion-card-content> 
+                  </ion-card>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      
+      </div>
+    
+      
+    </div>
+
+  </swiper-slide>
+    
+  </swiper-container>
+
+<div>
+  <div class="imgd">
+  </div>
+</div>
+</ion-content> 
